@@ -12008,3 +12008,19 @@ transition: all 0.5s ease-in-out;
 	animation: slideUp 1s ease-in-out 1s forwards;
   }
   
+  .client-scroll-con{
+	min-width: 120px;
+    max-width: 250px;
+	/* background-color: #dddddd; */
+	padding: 10px 20px;
+	border-radius: 15px;
+	border: 1px dashed #000;
+
+  }
+
+  @media (max-width: 768px) {
+    .client-scroll-con {
+        font-size: 12px;
+        width: 100px;
+    }
+}
