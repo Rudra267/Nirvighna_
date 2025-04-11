@@ -11901,7 +11901,7 @@ transition: all 0.5s ease-in-out;
 	height: 100vh;
 
 }
-.main-slider > img{
+.main-slider > video{
 	position: absolute;
 	z-index: 99;
 	width: 100%;
@@ -12052,12 +12052,12 @@ transition: all 0.5s ease-in-out;
 }
 
 
-.container-client {
+/* .container-client {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 20px;
     padding: 20px;
-}
+} */
 
 .client-card {
     background: #fff;
@@ -12075,28 +12075,64 @@ transition: all 0.5s ease-in-out;
 
 /* For large screens - 6 columns */
 @media (min-width: 1200px) {
-    .container-client{
+    /* .container-client{
         grid-template-columns: repeat(6, 1fr);
-    }
+    } */
 }
 
 /* For medium screens - 4 columns */
 @media (max-width: 1199px) and (min-width: 768px) {
-    .container-client {
+    /* .container-client {
         grid-template-columns: repeat(4, 1fr);
-    }
+    } */
 }
 
 /* For small screens - 2 columns */
 @media (max-width: 767px) {
-    .container-client {
+    /* .container-client {
         grid-template-columns: repeat(2, 1fr);
-    }
+    } */
 }
 
 /* For extra small screens - 1 column */
 @media (max-width: 480px) {
-    .container-client{
+    /* .container-client{
         grid-template-columns: 1fr;
-    }
+    } */
 }
+
+.client-carousel {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background: #fff;
+  }
+  
+  .container-client {
+	display: flex;
+	width: max-content;
+	animation: scroll-left 20s linear infinite;
+  }
+  
+  .client-card {
+	min-width: 150px;
+	margin: 0 20px;
+	flex-shrink: 0;
+  }
+  
+  .client-card img {
+	width: 100px;
+	height: auto;
+	object-fit: contain;
+  }
+  
+  /* Animation */
+  @keyframes scroll-left {
+	0% {
+	  transform: translateX(0);
+	}
+	100% {
+	  transform: translateX(-50%);
+	}
+  }
+  
