@@ -11169,7 +11169,7 @@ top: 60px;}
 
 
 /*----Product Showcase slider----*/
-.product-showcase{position:relative; font-family: 'Rajdhani', sans-serif; padding: 100px 45px 45px 45px; }
+.product-showcase{position:relative; font-family: 'Rajdhani', sans-serif; padding: 100px 45px 45px 45px; min-height: 500px;}
 
 .product-showcase:after{content: '';position: absolute;max-width: 150px;border-color:#d72323;border-width: 20px 0px 20px 20px;border-style: solid;height: 100%;
 top: 0px;left: 0%;bottom:0px;width: 100%;}
@@ -12172,4 +12172,18 @@ transition: all 0.5s ease-in-out;
 
   .social-links a:hover {
 	transform: scale(1.1);
+  }
+
+  .mob-enquire{
+	display: none;
+  }
+
+  @media(max-width:992px){
+	.mob-enquire{
+		display: block;
+	}
+
+	.des-enquire{
+		display: none;
+	}
   }

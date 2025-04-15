@@ -1,0 +1,76 @@
+.top-section {
+    background-color: #f05a1b; /* Orange */
+    height: 150px;
+  }
+
+  .middle-section {
+    background-color: #ffffff; /* White */
+    padding: 50px 20px;
+  }
+
+  .bottom-section {
+    background-color: #111111; /* Black */
+    height: 150px;
+  }
+
+  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  }
+
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #f05a1b;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f05a1b;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #d9490d;
+  }
+
+  @media (max-width: 480px) {
+    .form-container {
+      padding: 20px;
+    }
+  }
