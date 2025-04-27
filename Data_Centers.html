@@ -329,8 +329,8 @@
         <!-- CONTENT END -->
         
  
-         <!-- FOOTER START -->
-         <footer class="site-footer footer-large footer-dark text-white footer-style1" >
+        <!-- FOOTER START -->
+        <footer class="site-footer footer-large footer-dark text-white footer-style1" >
 
         
             <!-- FOOTER BLOCKES START -->  
@@ -407,16 +407,35 @@
 
                        <div class="col-lg-3 col-md-6">  
                         <div class="widget widget_newsletter">
-                            <h3 class="widget-title">Newsletter</h3>
-                                <p>Join our subscribers list to get the latest news, updates and special offers delivered directly in your inbox.</p>
+                         
                                 <div class="newsletter-input">
-                                  <div class="input-group">
-                                    <input id="email" type="text" class="form-control" name="email" placeholder="Enter your email">
-                                    <div class="input-group-append">
-                                      <button type="submit" class="input-group-text nl-search-btn text-black site-bg-primary title-style-2">Subscribe</button>
-                                    </div>
+                                    <form action="#" method="post">
+                                      <div class="input-group mb-3">
+                                        <input id="fname" type="text" class="form-control" name="name" placeholder="Enter your name">
+                                      </div>
+                                  
+                                      <div class="input-group mb-3">
+                                        <input id="email" type="email" class="form-control" name="email" placeholder="Enter your email">
+                                      </div>
+                                  
+                                      <div class="input-group mb-3">
+                                        <input id="phone" type="tel" class="form-control" name="phone" placeholder="Enter your phone number">
+                                      </div>
+                                  
+                                      <div class="input-group mb-3">
+                                        <textarea id="message" class="form-control" name="message" rows="4" placeholder="Enter your message"></textarea>
+                                      </div>
+                                  
+                                      <div class="input-group">
+                                        <div class="input-group-append">
+                                          <div onclick="sendContact()" type="submit" style="color: #FF5E15; background: transparent; border: 2px solid #fff; padding: 10px 20px; font-weight: 700;">
+                                            Submit
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
                                   </div>
-                                </div>
+                                  
                         </div>
                         
                        </div> 
@@ -434,11 +453,11 @@
                             <a href="index-2.html"><img width="150px" src="img/logo.png" alt="" ></a>
                         </div>
                         
-                        <ul class="copyrights-nav"> 
+                        <!-- <ul class="copyrights-nav"> 
                             <li><a href="javascript:void(0);">Terms  &amp; Condition</a></li>
                             <li><a href="javascript:void(0);">Privacy Policy</a></li>
                             <li><a href="contact-1.html">Contact Us</a></li>
-                        </ul>
+                        </ul> -->
                         
                         <ul class="social-icons  wt-social-links footer-social-icon">
                             <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
@@ -452,11 +471,20 @@
             <div class="footer-bottom">
               <div class="container">
                 <div class="wt-footer-bot-left d-flex justify-content-center">
-                    <span class="copyrights-text">© 2025 Designed by Virtuous Global Solution <span class="site-text-primary"></span></span>
+                    <a href="https://www.vgswebservices.com/"><span class="copyrights-text">© 2025 Designed by Virtuous Global Solution</span></a>
+                  
+
+                </div>
+
+                <div class="wt-footer-bot-left d-flex justify-content-center m-t10">
+                   
+                    <span class="copyrights-text">All rights reserved by Nirvighna Solutions</span>
+
                 </div>
               </div>   
             </div>   
 
+           
 
         </footer>
         <!-- FOOTER END -->
@@ -475,6 +503,20 @@
     </div>
 </div> -->
 <!-- LOADING AREA  END ====== -->
+
+
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function(){
+       emailjs.init({
+         publicKey: "wHoJ4Ei5XycDcuQ3i",
+       });
+    })();
+ </script>
+ <script src="js/contact.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <!-- JAVASCRIPT  FILES ========================================= --> 
 <script src="https://kit.fontawesome.com/b4564537dc.js" crossorigin="anonymous"></script>
